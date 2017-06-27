@@ -48,7 +48,7 @@ namespace ClockRadio
 
             userSetTime = userSetTime.AddHours(-hours);
             userSetTime = userSetTime.AddHours(int.Parse(userInput));
-        }
+        } 
 
         public void GetHelp()
         {
