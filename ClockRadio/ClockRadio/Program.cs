@@ -13,14 +13,14 @@ namespace ClockRadio
             string userInput;
 
             ClockRadio defaultClock = new ClockRadio();
-            Console.WriteLine("'Help' for a list of commands");
             Console.WriteLine(defaultClock.time);
+            Console.WriteLine("'Help' for a list of commands");
 
             do
             {
                 Console.WriteLine("");
                 Console.WriteLine("---------------------------------");
-                Console.WriteLine("Enter 'Exit' to quit the program.");
+                Console.WriteLine("Enter 'Exit' or 'Help'");
                 userInput = Console.ReadLine().ToLower();
 
                 switch (userInput)
@@ -28,8 +28,8 @@ namespace ClockRadio
                     case "time":
                         defaultClock.getTime();
                         break;
-                    case "set":
-                        defaultClock.getTime();
+                    case "set hour":
+                        defaultClock.setHour();
                         break;
                     case "help":
                         defaultClock.getHelp();
