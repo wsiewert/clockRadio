@@ -26,19 +26,19 @@ namespace ClockRadio
                 switch (userInput)
                 {
                     case "time":
-                        defaultClock.getTime();
+                        defaultClock.GetTime();
                         break;
                     case "set hour":
-                        defaultClock.setHour();
+                        defaultClock.SetHour();
                         break;
                     case "help":
-                        defaultClock.getHelp();
+                        defaultClock.GetHelp();
                         break;
                     case "station":
-                        defaultClock.getStation();
+                        defaultClock.GetStation();
                         break;
                     case "change station":
-                        defaultClock.setStation();
+                        defaultClock.SetStation();
                         break;
                     default:
                         break;

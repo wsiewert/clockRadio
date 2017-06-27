@@ -29,7 +29,7 @@ namespace ClockRadio
         }
 
         //Class Methods
-        public DateTime getTime()
+        public DateTime GetTime()
         {
             time = userSetTime;
             time = time + (DateTime.Now - initialComputerTime);
@@ -37,9 +37,9 @@ namespace ClockRadio
             return time;
         }
 
-        public void setHour()
+        public void SetHour()
         {
-            int hours = getTime().Hour;
+            int hours = GetTime().Hour;
             Console.WriteLine("current hour:");
             Console.WriteLine(hours);
             Console.WriteLine("please select an hour 0 - 23");
@@ -50,7 +50,7 @@ namespace ClockRadio
             userSetTime = userSetTime.AddHours(int.Parse(userInput));
         }
 
-        public void getHelp()
+        public void GetHelp()
         {
             Console.WriteLine("clock radio commands:");
             Console.WriteLine("'time' - gets the current time.");
@@ -59,12 +59,12 @@ namespace ClockRadio
             Console.WriteLine("'change station' - gets the current radio station.");
         }
 
-        public void getStation()
+        public void GetStation()
         {
             Console.WriteLine(radioStation);
         }
 
-        public void setStation()
+        public void SetStation()
         {
             string userInput = Console.ReadLine();
             radioStation = float.Parse(userInput);
